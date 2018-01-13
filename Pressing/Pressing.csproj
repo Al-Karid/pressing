@@ -104,13 +104,24 @@
     <Compile Include="nouveauDepot.Designer.cs">
       <DependentUpon>nouveauDepot.cs</DependentUpon>
     </Compile>
+    <Compile Include="PressingDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PressingDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeVetement.cs">
+    <Compile Include="typeVet\TypeVetement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TypeVetement.Designer.cs">
+    <Compile Include="typeVet\TypeVetement.Designer.cs">
       <DependentUpon>TypeVetement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="typeVet\TypeVetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="typeVet\TypeVetList.Designer.cs">
+      <DependentUpon>TypeVetList.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AjouterClient.resx">
       <DependentUpon>AjouterClient.cs</DependentUpon>
@@ -149,9 +160,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TypeVetement.resx">
+    <EmbeddedResource Include="typeVet\TypeVetement.resx">
       <DependentUpon>TypeVetement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="typeVet\TypeVetList.resx">
+      <DependentUpon>TypeVetList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PressingDBDataSet.xsc">
+      <DependentUpon>PressingDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PressingDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PressingDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PressingDBDataSet.xss">
+      <DependentUpon>PressingDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -22,5 +22,11 @@ namespace Pressing
             TypeVetement typeVet = new TypeVetement();
             typeVet.ShowDialog();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Pressing.typeVet.TypeVetList typeVetList = new Pressing.typeVet.TypeVetList();
+            typeVetList.ShowDialog();
+        }
     }
 }

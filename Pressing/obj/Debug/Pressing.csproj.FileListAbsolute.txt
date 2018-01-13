@@ -14,5 +14,5 @@ C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pr
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.depotUserControl.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.HomeUserControl.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.gestionUserControl.resources
-C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.csprojResolveAssemblyReference.cache
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.TypeVetement.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.typeVet.TypeVetList.resources
