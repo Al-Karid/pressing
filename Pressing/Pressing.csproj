@@ -62,6 +62,18 @@
     <Compile Include="client\Liste.Designer.cs">
       <DependentUpon>Liste.cs</DependentUpon>
     </Compile>
+    <Compile Include="service\Ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="service\Liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service\Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControls\gestionUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +127,12 @@
       <DependentUpon>Ajouter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="client\Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service\Liste.resx">
       <DependentUpon>Liste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\gestionUserControl.resx">

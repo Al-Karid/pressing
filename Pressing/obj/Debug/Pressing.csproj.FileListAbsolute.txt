@@ -14,3 +14,5 @@ C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pr
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.TypeVetement.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.typeVet.Liste.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.client.Liste.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.service.Liste.resources
+C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.service.Ajouter.resources

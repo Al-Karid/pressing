@@ -34,5 +34,11 @@ namespace Pressing
             Pressing.client.Liste liste = new Pressing.client.Liste();
             liste.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Pressing.service.Liste liste = new Pressing.service.Liste();
+            liste.ShowDialog();
+        }
     }
 }

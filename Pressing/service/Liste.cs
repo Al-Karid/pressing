@@ -15,6 +15,7 @@ namespace Pressing.service
         public Liste()
         {
             InitializeComponent();
+            this.serviceTA.Fill(this.pressingDBDataSet.SERVICE);
         }
     }
 }
