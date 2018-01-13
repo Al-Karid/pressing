@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pressing.typeVet
+namespace Pressing.client
 {
-    public partial class TypeVetList : Form
+    public partial class Liste : Form
     {
-        public TypeVetList()
+        public Liste()
         {
             InitializeComponent();
-            this.TypeVetListTA.Fill(this.pressingDBDataSet.TYPEVETEMENT);
+            this.clientTA.Fill(this.pressingDBDataSet.CLIENT);
         }
     }
 }

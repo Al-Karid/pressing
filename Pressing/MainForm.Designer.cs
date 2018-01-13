@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btnEtat = new System.Windows.Forms.Button();
             this.btnGestion = new System.Windows.Forms.Button();
             this.btnDepot = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
@@ -37,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnEtat = new System.Windows.Forms.Button();
             this.ajouterDepotUserControl1 = new Pressing.gestionUserControl();
             this.depotUserControl1 = new Pressing.depotUserControl();
             this.homeUserControl1 = new Pressing.homeUserControl();
@@ -76,6 +77,23 @@
             this.btn_exit.TabIndex = 4;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // btnEtat
+            // 
+            this.btnEtat.AccessibleName = "btnEtat";
+            this.btnEtat.BackColor = System.Drawing.Color.DimGray;
+            this.btnEtat.FlatAppearance.BorderSize = 0;
+            this.btnEtat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEtat.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEtat.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEtat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEtat.Location = new System.Drawing.Point(-3, 330);
+            this.btnEtat.Name = "btnEtat";
+            this.btnEtat.Size = new System.Drawing.Size(180, 50);
+            this.btnEtat.TabIndex = 4;
+            this.btnEtat.Text = "Etats";
+            this.btnEtat.UseVisualStyleBackColor = false;
+            this.btnEtat.Click += new System.EventHandler(this.btnEtat_Click);
             // 
             // btnGestion
             // 
@@ -168,25 +186,9 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnEtat
-            // 
-            this.btnEtat.AccessibleName = "btnEtat";
-            this.btnEtat.BackColor = System.Drawing.Color.DimGray;
-            this.btnEtat.FlatAppearance.BorderSize = 0;
-            this.btnEtat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEtat.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEtat.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEtat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEtat.Location = new System.Drawing.Point(-3, 330);
-            this.btnEtat.Name = "btnEtat";
-            this.btnEtat.Size = new System.Drawing.Size(180, 50);
-            this.btnEtat.TabIndex = 4;
-            this.btnEtat.Text = "Etats";
-            this.btnEtat.UseVisualStyleBackColor = false;
-            this.btnEtat.Click += new System.EventHandler(this.btnEtat_Click);
-            // 
             // ajouterDepotUserControl1
             // 
+            this.ajouterDepotUserControl1.BackColor = System.Drawing.Color.RoyalBlue;
             this.ajouterDepotUserControl1.Location = new System.Drawing.Point(180, 0);
             this.ajouterDepotUserControl1.Name = "ajouterDepotUserControl1";
             this.ajouterDepotUserControl1.Size = new System.Drawing.Size(739, 475);
@@ -202,6 +204,7 @@
             // 
             // homeUserControl1
             // 
+            this.homeUserControl1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.homeUserControl1.Location = new System.Drawing.Point(180, 0);
             this.homeUserControl1.Name = "homeUserControl1";
             this.homeUserControl1.Size = new System.Drawing.Size(739, 475);
@@ -217,6 +220,7 @@
             this.Controls.Add(this.homeUserControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

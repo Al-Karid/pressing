@@ -50,11 +50,17 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="client\AjouterClient.cs">
+    <Compile Include="client\Ajouter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="client\AjouterClient.Designer.cs">
-      <DependentUpon>AjouterClient.cs</DependentUpon>
+    <Compile Include="client\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client\Liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\gestionUserControl.cs">
       <SubType>UserControl</SubType>
@@ -93,20 +99,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="typeVet\TypeVetement.cs">
+    <Compile Include="typeVet\Ajouter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="typeVet\TypeVetement.Designer.cs">
-      <DependentUpon>TypeVetement.cs</DependentUpon>
+    <Compile Include="typeVet\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
     </Compile>
-    <Compile Include="typeVet\TypeVetList.cs">
+    <Compile Include="typeVet\Liste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="typeVet\TypeVetList.Designer.cs">
-      <DependentUpon>TypeVetList.cs</DependentUpon>
+    <Compile Include="typeVet\Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="client\AjouterClient.resx">
-      <DependentUpon>AjouterClient.cs</DependentUpon>
+    <EmbeddedResource Include="client\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\gestionUserControl.resx">
       <DependentUpon>gestionUserControl.cs</DependentUpon>
@@ -133,11 +142,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="typeVet\TypeVetement.resx">
-      <DependentUpon>TypeVetement.cs</DependentUpon>
+    <EmbeddedResource Include="typeVet\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="typeVet\TypeVetList.resx">
-      <DependentUpon>TypeVetList.cs</DependentUpon>
+    <EmbeddedResource Include="typeVet\Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PressingDBDataSet.xsc">
       <DependentUpon>PressingDBDataSet.xsd</DependentUpon>

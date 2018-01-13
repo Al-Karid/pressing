@@ -25,8 +25,14 @@ namespace Pressing
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Pressing.typeVet.TypeVetList typeVetList = new Pressing.typeVet.TypeVetList();
+            Pressing.typeVet.Liste typeVetList = new Pressing.typeVet.Liste();
             typeVetList.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Pressing.client.Liste liste = new Pressing.client.Liste();
+            liste.ShowDialog();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Pressing.typeVet
 {
-    partial class TypeVetList
+    partial class Liste
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Liste));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TypeVetBS = new System.Windows.Forms.BindingSource(this.components);
-            this.TypeVetListTA = new Pressing.PressingDBDataSetTableAdapters.TYPEVETEMENTTableAdapter();
             this.pressingDBDataSet = new Pressing.PressingDBDataSet();
+            this.TypeVetListTA = new Pressing.PressingDBDataSetTableAdapters.TYPEVETEMENTTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lIBELLEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TypeVetBS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pressingDBDataSet)).BeginInit();
@@ -46,15 +46,27 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.lIBELLEDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.TypeVetBS;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 86);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(345, 277);
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(369, 375);
             this.dataGridView1.TabIndex = 0;
             // 
             // TypeVetBS
@@ -62,14 +74,14 @@
             this.TypeVetBS.DataMember = "TYPEVETEMENT";
             this.TypeVetBS.DataSource = this.pressingDBDataSet;
             // 
-            // TypeVetListTA
-            // 
-            this.TypeVetListTA.ClearBeforeFill = true;
-            // 
             // pressingDBDataSet
             // 
             this.pressingDBDataSet.DataSetName = "PressingDBDataSet";
             this.pressingDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TypeVetListTA
+            // 
+            this.TypeVetListTA.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -84,36 +96,26 @@
             // 
             this.lIBELLEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.lIBELLEDataGridViewTextBoxColumn.DataPropertyName = "LIBELLE";
-            this.lIBELLEDataGridViewTextBoxColumn.HeaderText = "LIBELLE";
+            this.lIBELLEDataGridViewTextBoxColumn.FillWeight = 200F;
+            this.lIBELLEDataGridViewTextBoxColumn.HeaderText = "TYPES";
             this.lIBELLEDataGridViewTextBoxColumn.Name = "lIBELLEDataGridViewTextBoxColumn";
             this.lIBELLEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lIBELLEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(12, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Les types de vêtements";
-            // 
-            // TypeVetList
+            // Liste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 375);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "TypeVetList";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Liste";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Liste des types de vêtements";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TypeVetBS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pressingDBDataSet)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -125,6 +127,5 @@
         private PressingDBDataSet pressingDBDataSet;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lIBELLEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label1;
     }
 }
