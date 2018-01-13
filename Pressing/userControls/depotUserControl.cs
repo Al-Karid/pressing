@@ -19,8 +19,7 @@ namespace Pressing
 
         private void btnAjouterDepot_Click(object sender, EventArgs e)
         {
-            nouveauDepot nDepot = new nouveauDepot();
-            nDepot.ShowDialog();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -1,15 +1,12 @@
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\bin\Debug\Pressing.exe.config
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\bin\Debug\Pressing.exe
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\bin\Debug\Pressing.pdb
-c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.Form1.resources
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.Properties.Resources.resources
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.csproj.GenerateResource.Cache
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.exe
 c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.pdb
-c:\users\hp\documents\visual studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.nouveauDepot.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.AjouterClient.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.AjouterVetement.resources
-C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.ListeDepots.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.MainForm.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.depotUserControl.resources
 C:\Users\HP\Documents\Visual Studio 2012\Projects\Pressing\Pressing\obj\Debug\Pressing.HomeUserControl.resources

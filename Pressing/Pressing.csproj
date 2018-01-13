@@ -50,59 +50,41 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AjouterClient.cs">
+    <Compile Include="client\AjouterClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AjouterClient.Designer.cs">
+    <Compile Include="client\AjouterClient.Designer.cs">
       <DependentUpon>AjouterClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="gestionUserControl.cs">
+    <Compile Include="userControls\gestionUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="gestionUserControl.Designer.cs">
+    <Compile Include="userControls\gestionUserControl.Designer.cs">
       <DependentUpon>gestionUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="AjouterVetement.cs">
+    <Compile Include="vetement\AjouterVetement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AjouterVetement.Designer.cs">
+    <Compile Include="vetement\AjouterVetement.Designer.cs">
       <DependentUpon>AjouterVetement.cs</DependentUpon>
     </Compile>
-    <Compile Include="depotUserControl.cs">
+    <Compile Include="userControls\depotUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="depotUserControl.Designer.cs">
+    <Compile Include="userControls\depotUserControl.Designer.cs">
       <DependentUpon>depotUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="homeUserControl.cs">
+    <Compile Include="userControls\homeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="homeUserControl.Designer.cs">
+    <Compile Include="userControls\homeUserControl.Designer.cs">
       <DependentUpon>homeUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListeDepots.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListeDepots.Designer.cs">
-      <DependentUpon>ListeDepots.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="nouveauDepot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="nouveauDepot.Designer.cs">
-      <DependentUpon>nouveauDepot.cs</DependentUpon>
     </Compile>
     <Compile Include="PressingDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -123,32 +105,23 @@
     <Compile Include="typeVet\TypeVetList.Designer.cs">
       <DependentUpon>TypeVetList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AjouterClient.resx">
+    <EmbeddedResource Include="client\AjouterClient.resx">
       <DependentUpon>AjouterClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gestionUserControl.resx">
+    <EmbeddedResource Include="userControls\gestionUserControl.resx">
       <DependentUpon>gestionUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AjouterVetement.resx">
+    <EmbeddedResource Include="vetement\AjouterVetement.resx">
       <DependentUpon>AjouterVetement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="depotUserControl.resx">
+    <EmbeddedResource Include="userControls\depotUserControl.resx">
       <DependentUpon>depotUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="homeUserControl.resx">
+    <EmbeddedResource Include="userControls\homeUserControl.resx">
       <DependentUpon>homeUserControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListeDepots.resx">
-      <DependentUpon>ListeDepots.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="nouveauDepot.resx">
-      <DependentUpon>nouveauDepot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -232,6 +205,7 @@
   <ItemGroup>
     <None Include="Resources\__Iron-64.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
