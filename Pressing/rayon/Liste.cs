@@ -8,18 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pressing
+namespace Pressing.rayon
 {
-    public partial class AjouterVetement : Form
+    public partial class Liste : Form
     {
-        public AjouterVetement()
+        public Liste()
         {
             InitializeComponent();
-        }
-
-        private void AjouterVetement_Load(object sender, EventArgs e)
-        {
-
+            this.rayonTA.Fill(this.pressingDBDataSet.RAYON);
         }
     }
 }

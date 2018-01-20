@@ -42,6 +42,11 @@ namespace Pressing
 
         private void btnEtat_Click(object sender, EventArgs e)
         {
+            impUserControl1.BringToFront();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -101,7 +101,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.BackColor = System.Drawing.Color.Lavender;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnAjouterDepot);
@@ -115,7 +115,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(77, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 18);
@@ -162,7 +162,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Crimson;
+            this.panel2.BackColor = System.Drawing.Color.Lavender;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
@@ -175,8 +175,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Lavender;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(117, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 18);
@@ -223,7 +224,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Crimson;
+            this.panel4.BackColor = System.Drawing.Color.Lavender;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button5);
@@ -237,7 +238,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(103, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 18);
@@ -257,6 +258,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Liste";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -284,7 +286,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Crimson;
+            this.panel5.BackColor = System.Drawing.Color.Lavender;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.button7);
@@ -298,7 +300,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(98, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 18);
@@ -346,7 +348,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Crimson;
+            this.panel6.BackColor = System.Drawing.Color.Lavender;
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.button9);
@@ -360,7 +362,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(71, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 18);
@@ -409,7 +411,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Crimson;
+            this.panel7.BackColor = System.Drawing.Color.Lavender;
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.button10);
             this.panel7.Controls.Add(this.button11);
@@ -423,12 +425,13 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(103, 22);
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(107, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "Clients";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button10
             // 
@@ -458,6 +461,7 @@
             this.button11.TabIndex = 1;
             this.button11.Text = "Ajouter";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // pictureBox6
             // 
@@ -473,7 +477,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);

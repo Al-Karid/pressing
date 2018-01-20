@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.impUserControl1 = new Pressing.userControls.ImpUserControl();
             this.ajouterDepotUserControl1 = new Pressing.gestionUserControl();
             this.depotUserControl1 = new Pressing.depotUserControl();
             this.homeUserControl1 = new Pressing.homeUserControl();
@@ -186,6 +187,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // impUserControl1
+            // 
+            this.impUserControl1.Location = new System.Drawing.Point(180, 0);
+            this.impUserControl1.Name = "impUserControl1";
+            this.impUserControl1.Size = new System.Drawing.Size(739, 475);
+            this.impUserControl1.TabIndex = 4;
+            // 
             // ajouterDepotUserControl1
             // 
             this.ajouterDepotUserControl1.BackColor = System.Drawing.Color.RoyalBlue;
@@ -215,15 +223,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 475);
+            this.Controls.Add(this.impUserControl1);
             this.Controls.Add(this.ajouterDepotUserControl1);
             this.Controls.Add(this.depotUserControl1);
             this.Controls.Add(this.homeUserControl1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "Acceuil - Pressing Central";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -247,5 +258,6 @@
         private depotUserControl depotUserControl1;
         private gestionUserControl ajouterDepotUserControl1;
         private System.Windows.Forms.Button btnEtat;
+        private userControls.ImpUserControl impUserControl1;
     }
 }

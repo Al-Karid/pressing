@@ -40,5 +40,17 @@ namespace Pressing
             Pressing.service.Liste liste = new Pressing.service.Liste();
             liste.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Pressing.service.Liste liste = new Pressing.service.Liste();
+            liste.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Pressing.client.Ajouter Aclient = new Pressing.client.Ajouter();
+            Aclient.ShowDialog();
+        }
     }
 }

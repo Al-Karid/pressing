@@ -62,6 +62,30 @@
     <Compile Include="client\Liste.Designer.cs">
       <DependentUpon>Liste.cs</DependentUpon>
     </Compile>
+    <Compile Include="depot\Ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depot\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depot\AjouterVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depot\AjouterVet.Designer.cs">
+      <DependentUpon>AjouterVet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rayon\Ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rayon\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rayon\Liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rayon\Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </Compile>
     <Compile Include="service\Ajouter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,12 +103,6 @@
     </Compile>
     <Compile Include="userControls\gestionUserControl.Designer.cs">
       <DependentUpon>gestionUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="vetement\AjouterVetement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vetement\AjouterVetement.Designer.cs">
-      <DependentUpon>AjouterVetement.cs</DependentUpon>
     </Compile>
     <Compile Include="userControls\depotUserControl.cs">
       <SubType>UserControl</SubType>
@@ -123,10 +141,25 @@
     <Compile Include="typeVet\Liste.Designer.cs">
       <DependentUpon>Liste.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\ImpUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\ImpUserControl.Designer.cs">
+      <DependentUpon>ImpUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="client\Ajouter.resx">
       <DependentUpon>Ajouter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="client\Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depot\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depot\AjouterVet.resx">
+      <DependentUpon>AjouterVet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rayon\Liste.resx">
       <DependentUpon>Liste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="service\Ajouter.resx">
@@ -137,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\gestionUserControl.resx">
       <DependentUpon>gestionUserControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vetement\AjouterVetement.resx">
-      <DependentUpon>AjouterVetement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\depotUserControl.resx">
       <DependentUpon>depotUserControl.cs</DependentUpon>
@@ -165,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="typeVet\Liste.resx">
       <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\ImpUserControl.resx">
+      <DependentUpon>ImpUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PressingDBDataSet.xsc">
       <DependentUpon>PressingDBDataSet.xsd</DependentUpon>
@@ -232,7 +265,9 @@
   <ItemGroup>
     <None Include="Resources\__Iron-64.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="vetement\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

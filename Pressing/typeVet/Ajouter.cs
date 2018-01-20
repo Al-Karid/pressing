@@ -15,13 +15,14 @@ namespace Pressing
         public TypeVetement()
         {
             InitializeComponent();
+            this.typeVetTA.Fill(this.pressingDBDS.TYPEVETEMENT);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                typeVetBS.EndEdit();
+                this.typeVetBS.EndEdit();
             }
             catch (Exception ex)
             {
@@ -31,7 +32,7 @@ namespace Pressing
 
             try
             {
-                typevetementTableAdapter1.Fill(pressingDBDS.TYPEVETEMENT);
+                this.typeVetTA.Update(pressingDBDS.TYPEVETEMENT);
                 MessageBox.Show("Enregistrement terminé");
             }
             catch (Exception ex)
